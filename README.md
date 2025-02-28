@@ -56,3 +56,12 @@ Supported architectures:
      * `USE_AVX2` &ndash; use AVX2 instructions
      * `USE_AVX512F` &ndash; use AVX-512F instructions
  * `generic` &ndash; use generic C impementation
+
+### Qt actual compilation
+
+- Open argon2.pro with Qt5.12.12.
+- When selecting toolchains select:
+  - Qt5.5.1 Mingw 32 bit.
+  - Qt5.12.12 Mingw 32 bit.
+  - MSVC 2017 64 bit.
+- Compile subprojects one by one in the order stated in main .pro.
