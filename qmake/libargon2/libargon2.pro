@@ -11,6 +11,8 @@ TEMPLATE = lib
 
 ARGON2_ROOT = ../..
 
+ARCH = generic
+
 INCLUDEPATH += \
     $$ARGON2_ROOT/include \
     $$ARGON2_ROOT/lib
