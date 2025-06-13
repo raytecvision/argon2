@@ -36,7 +36,7 @@ IF %use_msvc%==1 (
 
 	set "ADD_PATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\%MSVCVER%\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\%WINKITVER%\x64;C:\Program Files (x86)\Windows Kits\10\bin\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\Common7\Tools\;C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\%MSVCVER%\bin\HostX64\x64;C:\Qt\Qt5.12.12\Tools\msvc2017_64\bin;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\%MSVCVER%\bin\Hostx64\x64;C:\Qt\Qt5.12.12\Tools\QtCreator\bin\jom;"
 
-	set cmake_variables_qt="-DCMAKE_CXX_COMPILER=C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/14.16.27023/bin/HostX64/x64/cl.exe"
+	set cmake_variables_qt="-DCMAKE_CXX_COMPILER=C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/VC/Tools/MSVC/%MSVCVER%/bin/HostX64/x64/cl.exe"
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DCMAKE_PREFIX_PATH=C:/Qt/Qt5.12.12/5.12.12/msvc2017_64"
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DCMAKE_PROJECT_INCLUDE_BEFORE=C:/Qt/Qt5.12.12/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake"
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DQT_CREATOR_SKIP_PACKAGE_MANAGER_SETUP=OFF"
