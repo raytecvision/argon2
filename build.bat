@@ -53,7 +53,7 @@ IF %use_msvc%==1 (
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DQT_QMAKE_EXECUTABLE=C:/Qt/Qt5.5.1/5.5/mingw492_32/bin/qmake.exe"
 )
 
-set PATH=%PATH%%ADD_PATH%
+set PATH=%PATH%;%ADD_PATH%
 
 REM **************************************************************************
 REM **************************************************************************
