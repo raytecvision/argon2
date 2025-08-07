@@ -41,12 +41,12 @@ IF %use_msvc%==1 (
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DCMAKE_PROJECT_INCLUDE_BEFORE=C:/Qt/Qt5.12.12/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake"
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DQT_CREATOR_SKIP_PACKAGE_MANAGER_SETUP=OFF"
 ) ELSE (
-	set "ADD_PATH=C:\Qt\Qt5.5.1\Tools\mingw492_32\bin;C:\Qt\Qt5.12.12\Tools\QtCreator\bin;C:\Qt\Qt5.12.12\Tools\QtCreator\bin\jom;"
+	set "ADD_PATH=C:\Qt\Qt5.5.1\Tools\mingw492_32\bin;C:\Qt\Qt5.5.1\Tools\QtCreator\bin;C:\Qt\Qt5.5.1\Tools\QtCreator\bin\jom;"
 	set "QTDIR=C:\Qt\Qt5.5.1\5.5\mingw492_32"
 
 	set cmake_variables_qt="-DCMAKE_CXX_COMPILER=C:\Qt\Qt5.5.1\Tools\mingw492_32\bin\g++.exe"
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DCMAKE_C_COMPILER=C:/Qt/Qt5.5.1/Tools/mingw492_32/bin/gcc.exe"
-	call set cmake_variables_qt=%%cmake_variables_qt%% "-DCMAKE_PROJECT_INCLUDE_BEFORE=C:/Qt/Qt5.12.12/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake"
+	call set cmake_variables_qt=%%cmake_variables_qt%% "-DCMAKE_PROJECT_INCLUDE_BEFORE=C:/Qt/Qt5.5.1/Tools/QtCreator/share/qtcreator/package-manager/auto-setup.cmake"
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DCMAKE_GNUtoMS=OFF"
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DCMAKE_PREFIX_PATH=C:/Qt/Qt5.5.1/5.5/mingw492_32"
 	call set cmake_variables_qt=%%cmake_variables_qt%% "-DQT_CREATOR_SKIP_PACKAGE_MANAGER_SETUP=OFF"
