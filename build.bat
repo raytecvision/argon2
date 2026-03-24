@@ -107,7 +107,7 @@ IF "%do_clean%"=="1" (
 	cmake --build ..\%make_path% --target clean	
 )
 	
-cmake --build ..\%make_path% --target all install
+cmake --build ..\%make_path% --target all install --parallel
 
 cd ..\
 cd %project_path%
